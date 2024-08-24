@@ -1,16 +1,15 @@
 .cardContainer {
   display: flex;
-  width: 20vw;
+  width: 23%;
   background-color: hsl(227, 47%, 96%);
   height: 25vh;
   flex-direction: column;
-  margin: 10px;
   text-align: center;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   border-radius: 5px;
-  position: relative; 
+  position: relative;
 }
 .cardContainer::before {
   content: "";
@@ -18,21 +17,21 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 4px; 
+  height: 4px;
   background-color: var(--card-color);
-  border-top-left-radius: 8px; 
+  border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 .card-facebook::before {
-  background-color: rgb(25, 143, 245) ;
+  background-color: rgb(25, 143, 245);
 }
 
 .card-twitter::before {
-  background-color:  rgb(28, 160, 242);
+  background-color: rgb(28, 160, 242);
 }
 
 .card-instagram::before {
-  background: linear-gradient(90deg,rgb(253, 196, 104),rgb(223, 73, 150));
+  background: linear-gradient(90deg, rgb(253, 196, 104), rgb(223, 73, 150));
 }
 
 .card-youtube::before {
@@ -51,19 +50,19 @@
 }
 
 .follow {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   font-weight: 500;
   letter-spacing: 5px;
   color: rgb(99, 104, 126);
 }
 .h1Text {
-  font-size: 3rem;
+  font-size: 2rem;
   color: rgb(30, 32, 42);
   margin: 10px 0px -15px 0px;
 }
 
 .todayChange {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   display: flex;
   margin-top: 15px;
   align-items: center;
@@ -81,34 +80,31 @@
   color: rgb(220, 65, 76);
 }
 
-.dark-mode{
-  .h1Text{
-    color: hsl(0, 0%, 100%) ;
+.dark-mode {
+  .h1Text {
+    color: hsl(0, 0%, 100%);
   }
-  .cardContainer{
+  .cardContainer {
     background-color: hsl(228, 28%, 20%);
   }
-  .handle, .follow {
-    color: hsl(228, 34%, 66%) ;
+  .handle,
+  .follow {
+    color: hsl(228, 34%, 66%);
     font-weight: 700;
   }
-} 
-
-
+}
 
 @media (max-width: 1044px) {
-  .cardContainer {
-    height:  27vh;
-  }
-  .handle, .todayChange, .follow {
+  .handle,
+  .todayChange {
     font-size: 0.6rem;
   }
-  .h1Text {
-    font-size: 2rem;
-  }
-  
 }
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .cardContainer {
+    width: 48%;
+    margin-bottom: 1rem;
+  }
   .h1Text {
     font-size: 1.5rem;
   }
@@ -120,13 +116,6 @@
 @media (max-width: 700px) {
   .cardContainer {
     width: 100%;
-    height:  28vh;
-  }
-  .h1Text {
-    font-size: 1.5rem;
-  }
-  .follow {
-    font-size: 0.5rem;
-    letter-spacing: 3px;
+    height: 28vh;
   }
 }

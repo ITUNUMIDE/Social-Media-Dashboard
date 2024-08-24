@@ -1,10 +1,10 @@
 .overviewContainer {
   display: flex;
-  width: 15.5vw;
+  width: 21%;
+  padding: 1rem;
   background-color: hsl(227, 47%, 96%);
   height: 13vh;
-  padding: 15px 22px;
-  margin: 10px ;
+  margin-bottom: 1.5rem;
   flex-direction: column;
   text-align: center;
   justify-content: space-between;
@@ -12,11 +12,11 @@
   font-weight: 700;
   border-radius: 7px;
 }
-.cont{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
+.cont {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
 }
 .metricName {
   font-size: 0.8em;
@@ -24,14 +24,14 @@
   margin: 2px;
 }
 .metricCount {
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: rgb(30, 32, 42);
 }
 .metricChange {
-    font-size: 0.7em;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
+  font-size: 0.7em;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
 }
 /* .changeIcon {
   margin-right: 2px;
@@ -43,75 +43,43 @@
 .metricChange.down {
   color: rgb(220, 65, 76);
 }
-.dark-mode{
+.dark-mode {
   .overviewContainer {
-    background-color: hsl(228, 28%, 20%) ;
+    background-color: hsl(228, 28%, 20%);
   }
-  .metricName{
-    color:hsl(228, 34%, 66%) ;
-  }
-  .metricCount{
-    color:hsl(0, 0%, 100%) ;
-  }
-}
-
-@media (max-width: 1330px) {
-  .overviewContainer {
-    width:  15.1vw;
-  }
-}
-
-@media (max-width: 1044px) {
-  .overviewContainer {
-    width:  13.8vw;
-  }
-}
-@media (max-width: 1044px) {
-  .overviewContainer {
-    width:  13.8vw;
-  }
-  .metricName, .metricChange{
-    font-size: 0.6em;
+  .metricName {
+    color: hsl(228, 34%, 66%);
   }
   .metricCount {
-    font-size: 1.3em;
+    color: hsl(0, 0%, 100%);
+  }
+}
+@media (max-width: 1044px) {
+  .overviewContainer {
+    width: 20%;
+    margin-bottom: 1rem;
   }
 }
 @media (max-width: 900px) {
   .overviewContainer {
-    width:  12.8vw;
+    width: 43%;
   }
 }
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .overviewContainer {
-    width:  12vw;
-  }
-}
-@media (max-width: 700px) {
-  .overviewContainer {
-    width:  92%;
+    width: 92%;
     height: 15vh;
-    padding: 15px ;
   }
-  .metricName, .metricChange{
+  .metricName,
+  .metricChange {
     font-size: 0.6em;
   }
   .metricCount {
     font-size: 1em;
   }
 }
-@media (max-width: 600px) {
-  .overviewContainer {
-    width:  90%;
-  }
-}
 @media (max-width: 500px) {
   .overviewContainer {
-    width:  89%;
-  }
-}
-@media (max-width: 375px) {
-  .overviewContainer {
-    width:  85%;
+    width: 89%;
   }
 }

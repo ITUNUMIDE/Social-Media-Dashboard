@@ -1,33 +1,32 @@
 .dark-mode-toggle {
   display: inline-flex;
   align-items: center;
-  background-color: hsl(230, 22%, 74%); /* Light background */
+  background-color: hsl(230, 22%, 74%);
   border-radius: 20px;
   padding: 5px;
   cursor: pointer;
-  position: relative; 
-  width: 100%; 
-  max-width: 45px; 
-  height: 15px; 
+  position: relative;
+  width: 100%;
+  max-width: 45px;
+  height: 15px;
   transition: background-color 0.3s ease;
 }
 
 .dark-mode-toggle.dark-mode-enabled {
-  background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%)); /* Dark background */
+  background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
 }
 
 .toggle-circle {
   width: 20px;
   height: 20px;
-  /* background-color: hsl(230, 22%, 74%);  */
   border-radius: 50%;
   position: absolute;
   transition: transform 0.3s ease;
-  transform: translateX(0); 
+  transform: translateX(0);
 }
 
 .dark-mode-enabled .toggle-circle {
-  transform: translateX(calc(100% - 24px)); /* Move the circle to the right end when in dark mode */
+  transform: translateX(calc(100% - 24px));
 }
 
 .icon {
@@ -40,7 +39,7 @@
 .icon-sun {
   left: 4px;
   opacity: 1;
-  transform: rotate(180deg); 
+  transform: rotate(180deg);
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
 

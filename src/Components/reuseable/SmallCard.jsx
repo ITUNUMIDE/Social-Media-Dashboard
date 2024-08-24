@@ -19,7 +19,6 @@ const SmallCard = ({
         <Icon name={platform} />
       </div>
       <div className="cont">
-        
         <div className="metricCount">{metricCount}</div>
         <div className={`metricChange ${changeDirection}`}>
           <img

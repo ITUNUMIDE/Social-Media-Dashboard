@@ -11,12 +11,12 @@
 
 body {
   margin: 0;
-  background:hsl(0, 0%, 100%);
+  background: hsl(0, 0%, 100%);
   color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 body.dark-mode {
-  background-color:  hsl(230, 17%, 14%); /* Dark background */
+  background-color: hsl(230, 17%, 14%);
   color: white;
 }

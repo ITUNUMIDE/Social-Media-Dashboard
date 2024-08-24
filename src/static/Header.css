@@ -1,71 +1,68 @@
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: aqua; */
-    line-height: 0.2;
-    margin: 2% auto;
-    font-weight: 700;
-    
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 0.2;
+  margin: 2% auto;
+  font-weight: 700;
 }
-.headerText{
-       color: rgb(30, 32, 42);
+.headerText {
+  color: rgb(30, 32, 42);
 }
-.tFollowers{
-    font-size: 0.7rem;
-    color: rgb(99, 104, 126);
+.tFollowers {
+  font-size: 0.7rem;
+  color: rgb(99, 104, 126);
 }
-.dark{
-    /* background-color: blue; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 15%;
+.dark {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15%;
 }
-.darkText{
-    font-size: 0.7rem;
-    color: rgb(99, 104, 126);
+.darkText {
+  font-size: 0.7rem;
+  color: rgb(99, 104, 126);
 }
-.dark-mode{
-    .headerText{
-        color: hsl(0, 0%, 100%);
-    }
-    .tFollowers{
-        color:hsl(228, 34%, 66%) ;
-    }
+.dark-mode {
+  .headerText {
+    color: hsl(0, 0%, 100%);
+  }
+  .tFollowers {
+    color: hsl(228, 34%, 66%);
+  }
 }
 @media (max-width: 950px) {
-    .dark{
-        width: 18%;
- }
+  .dark {
+    width: 18%;
   }
-  @media (max-width: 800px) {
-    .dark{
-        width: 21%;
- }
+}
+@media (max-width: 800px) {
+  .dark {
+    width: 21%;
   }
+}
 @media (max-width: 700px) {
-    .dark{
-        width: 22%;
- }
+  .dark {
+    width: 22%;
   }
+}
 @media (max-width: 600px) {
-    .container {
-        margin: 4% auto;
-        width: 97%;
-      flex-direction:column;
-      align-items: start;
-    }
-    .tFollowers{
-        font-size: 0.6rem;
-    }
-    .headerText{
-        font-size: 1rem;
- }
- .dark{
+  .container {
+    margin: 4% auto;
+    width: 97%;
+    flex-direction: column;
+    align-items: start;
+  }
+  .tFollowers {
+    font-size: 0.6rem;
+  }
+  .headerText {
+    font-size: 1rem;
+  }
+  .dark {
     width: 100%;
     margin-top: 6%;
     flex-direction: row;
     justify-content: space-between;
- }
   }
+}
