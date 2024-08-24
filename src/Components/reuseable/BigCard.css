@@ -1,0 +1,132 @@
+.cardContainer {
+  display: flex;
+  width: 20vw;
+  background-color: hsl(227, 47%, 96%);
+  height: 25vh;
+  flex-direction: column;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 5px;
+  position: relative; 
+}
+.cardContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px; 
+  background-color: var(--card-color);
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px;
+}
+.card-facebook::before {
+  background-color: rgb(25, 143, 245) ;
+}
+
+.card-twitter::before {
+  background-color:  rgb(28, 160, 242);
+}
+
+.card-instagram::before {
+  background: linear-gradient(90deg,rgb(253, 196, 104),rgb(223, 73, 150));
+}
+
+.card-youtube::before {
+  background-color: rgb(196, 3, 42);
+}
+
+.iconHandle {
+  display: flex;
+  align-items: center;
+}
+
+.handle {
+  color: rgb(99, 104, 126);
+  font-size: 0.8rem;
+  margin-left: 6px;
+}
+
+.follow {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 5px;
+  color: rgb(99, 104, 126);
+}
+.h1Text {
+  font-size: 3rem;
+  color: rgb(30, 32, 42);
+  margin: 10px 0px -15px 0px;
+}
+
+.todayChange {
+  font-size: 0.8rem;
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.changeIcon {
+  margin-right: 5px;
+}
+
+.todayChange.up {
+  color: rgb(29, 180, 137);
+}
+
+.todayChange.down {
+  color: rgb(220, 65, 76);
+}
+
+.dark-mode{
+  .h1Text{
+    color: hsl(0, 0%, 100%) ;
+  }
+  .cardContainer{
+    background-color: hsl(228, 28%, 20%);
+  }
+  .handle, .follow {
+    color: hsl(228, 34%, 66%) ;
+    font-weight: 700;
+  }
+} 
+
+
+
+@media (max-width: 1044px) {
+  .cardContainer {
+    height:  27vh;
+  }
+  .handle, .todayChange, .follow {
+    font-size: 0.6rem;
+  }
+  .h1Text {
+    font-size: 2rem;
+  }
+  
+}
+@media (max-width: 700px) {
+  .h1Text {
+    font-size: 1.5rem;
+  }
+  .follow {
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+  }
+}
+@media (max-width: 700px) {
+  .cardContainer {
+    width: 100%;
+    height:  28vh;
+  }
+  .h1Text {
+    font-size: 1.5rem;
+  }
+  .follow {
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+  }
+}
