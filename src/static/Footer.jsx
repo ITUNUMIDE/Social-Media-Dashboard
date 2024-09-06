@@ -11,7 +11,7 @@ const Footer = () => {
     >
       <p>
         Challenge by <a href="#">Frontend Mentor</a> Frontend Mentor. Coded by{" "}
-        <a href="#">Raji Itunu Idowu</a>.
+        <a href="https://my-portfolio-sail-raji-itunu-idowus-projects.vercel.app">Raji Itunu Idowu</a>.
       </p>
     </div>
   );
